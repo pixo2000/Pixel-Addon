@@ -14,7 +14,7 @@
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "me.pixel.Addon"
+      "me.pixel.Pixel"
     ]
   },
   "mixins": [
