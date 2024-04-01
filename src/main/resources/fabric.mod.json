@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
-  "id": "addon-template",
+  "id": "pixel-addon",
   "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for the Meteor addons.",
+  "name": "Pixel Addon",
+  "description": "The Pixel Addon for Meteor with nice Modules and Commands.",
   "authors": [
-    "seasnail"
+    "pixo2000"
   ],
   "contact": {
-    "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://discord.com/users/816347872181878786"
   },
-  "icon": "assets/template/icon.png",
+  "icon": "assets/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.Addon"
+      "me.pixel.Addon"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "pixel-addon.mixins.json"
   ],
   "custom": {
     "meteor-client:color": "225,25,25"

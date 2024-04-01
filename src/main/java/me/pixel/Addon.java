@@ -1,8 +1,8 @@
-package com.example.addon;
+package me.pixel;
 
-import com.example.addon.commands.CommandExample;
-import com.example.addon.hud.HudExample;
-import com.example.addon.modules.ModuleExample;
+import me.pixel.commands.CommandExample;
+import me.pixel.hud.HudExample;
+import me.pixel.modules.ModuleExample;
 import com.mojang.logging.LogUtils;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
 import meteordevelopment.meteorclient.commands.Commands;
@@ -38,6 +38,6 @@ public class Addon extends MeteorAddon {
 
     @Override
     public String getPackage() {
-        return "com.example.addon";
+        return "me.pixel";
     }
 }
