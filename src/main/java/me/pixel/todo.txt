@@ -5,4 +5,5 @@
 - infiniaura
 - setup capes
 - if server not answering tell the player in the hud
+- add+recode AutoDoors
 - working crash
