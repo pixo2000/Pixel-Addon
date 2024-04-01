@@ -1,0 +1,8 @@
+- ElytraBot(https://github.com/AntiCope/reaper-addon/blob/6bf9a6da40fe145aad399b460e7d017b3597323b/src/main/java/me/ghosttypes/reaper/modules/misc/elytrabot/ElytraBotThreaded.java)
+- AltoClef Fix
+- AutoDragonCycle
+- HWID sperre/Discord webhook to check who uses the mod
+- infiniaura
+- setup capes
+- if server not answering tell the player in the hud
+- working crash
