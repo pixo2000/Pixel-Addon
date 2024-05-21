@@ -37,6 +37,8 @@ public class Pixel extends MeteorAddon {
         Modules.get().add(new PacketLogger());
         Modules.get().add(new SitModule());
         Modules.get().add(new WorldGuardBypass());
+        Modules.get().add(new TanukiEgapFinder());
+        Modules.get().add(new LogOutSpots());
 
 
         // Commands
