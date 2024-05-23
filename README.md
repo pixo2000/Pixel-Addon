@@ -6,3 +6,6 @@ A template to allow easy usage of the Meteor Addon API.
 - Clone this project
 - Use this template to create new modules/commands
 - Run the mod with Meteor.
+
+- todo:
+- add explore from haha addon
