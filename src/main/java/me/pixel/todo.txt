@@ -4,7 +4,12 @@
 - HWID sperre/Discord webhook to check who uses the mod
 - infiniaura
 - setup capes
-- if server not answering tell the player in the hud
 - add+recode AutoDoors
 - working crash
 - fix PacketLogger and Minesweeper
+- more locate
+fake attack(zewo2)
+fix girlboss
+add legit stuff
+
+UPDATE TO 1.21

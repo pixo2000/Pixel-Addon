@@ -61,3 +61,4 @@ public class Girlboss extends Module {
         hasSentFirstAlert = true;
     }
 }
+// NOT WORKING
