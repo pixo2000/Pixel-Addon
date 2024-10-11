@@ -13,9 +13,6 @@ import meteordevelopment.meteorclient.systems.modules.Modules;
 import org.slf4j.Logger;
 
 public class Pixel extends MeteorAddon {
-
-    public static final Category PIXEL = new Category("PIXEL");
-    public static final Category SETTINGS = new Category("Settings");
     public static final Logger LOG = LogUtils.getLogger();
     public static final Category CATEGORY = new Category("Pixel");
     public static final HudGroup HUD_GROUP = new HudGroup("Pixel");
@@ -25,12 +22,33 @@ public class Pixel extends MeteorAddon {
         LOG.info("Initializing Meteor Pixel Addon");
 
         // Modules
-        Modules.get().add(new AutoDoors());
-        Modules.get().add(new BookTools());
-        Modules.get().add(new AutoPearl());
+        Modules.get().add(new AntiSpawnpoint());
+        Modules.get().add(new AutoChunkBan());
+        Modules.get().add(new AutoGold());
+        Modules.get().add(new AutoSnowball());
+        Modules.get().add(new AutoTrade());
+        Modules.get().add(new GhostMode());
+        Modules.get().add(new Girlboss());
+        Modules.get().add(new Groupmessage());
+        Modules.get().add(new MinecartAura());
+        Modules.get().add(new MinecartSpeed());
+        Modules.get().add(new MinecartAura());
+        Modules.get().add(new NoSwing());
+        Modules.get().add(new PacketLogger());
+        Modules.get().add(new SitModule());
+        Modules.get().add(new WorldGuardBypass());
+        Modules.get().add(new TanukiEgapFinder());
+        Modules.get().add(new LogOutSpots());
 
 
         // Commands
+        Commands.add((new CheckCMD()));
+        Commands.add((new ClearInventoryCommand()));
+        Commands.add((new Crash()));
+        Commands.add((new Ping()));
+        Commands.add((new ReloadCapes()));
+        Commands.add((new Title()));
+        Commands.add((new TrashCommand()));
         Commands.add((new Tts()));
 
         // HUD
@@ -39,8 +57,7 @@ public class Pixel extends MeteorAddon {
 
     @Override
     public void onRegisterCategories() {
-        Modules.registerCategory(PIXEL);
-        Modules.registerCategory(SETTINGS);
+        Modules.registerCategory(CATEGORY);
     }
 
     @Override
