@@ -6,7 +6,6 @@
 - setup capes
 - add+recode AutoDoors
 - working crash
-- fix PacketLogger and Minesweeper
 - more locate
 fake attack(zewo2)
 fix girlboss
