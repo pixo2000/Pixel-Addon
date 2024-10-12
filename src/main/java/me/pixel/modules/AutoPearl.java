@@ -65,7 +65,7 @@ public class AutoPearl extends BlackOutModule {
     private final Setting<Boolean> instaRot = sgGeneral.add(new BoolSetting.Builder()
         .name("Instant Rotation")
         .description("Instantly rotates.")
-        .defaultValue(false)
+        .defaultValue(true)
         .build()
     );
 
@@ -73,7 +73,7 @@ public class AutoPearl extends BlackOutModule {
     private final Setting<Boolean> swing = sgRender.add(new BoolSetting.Builder()
         .name("Swing")
         .description("Renders swing animation when throwing an ender pearl.")
-        .defaultValue(true)
+        .defaultValue(false)
         .build()
     );
     private final Setting<SwingHand> swingHand = sgRender.add(new EnumSetting.Builder<SwingHand>()
@@ -128,7 +128,7 @@ public class AutoPearl extends BlackOutModule {
             return;
         }
 
-        useItem(hand == null ? Hand.MAIN_HAND : hand);
+        useItem(hand ==  Hand.MAIN_HAND);
 
         Managers.ROTATION.end(Objects.hash(name + "look"));
         if (swing.get()) clientSwing(swingHand.get(), hand == null ? Hand.MAIN_HAND : hand);

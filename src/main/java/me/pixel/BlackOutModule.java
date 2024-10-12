@@ -121,27 +121,15 @@ public class BlackOutModule extends Module {
                 eyes.y > pos.getY() && eyes.y < pos.getY() + 1 &&
                 eyes.z > pos.getZ() && eyes.z < pos.getZ() + 1;
 
-        SettingUtils.swing(SwingState.Pre, SwingType.Placing, hand);
+        SettingUtils.swing(SwingState.Pre, SwingType.Placing, Hand.MAIN_HAND);
         sendSequenced(s -> new PlayerInteractBlockC2SPacket(hand, new BlockHitResult(blockHitVec, blockDirection, pos, inside), s));
-        SettingUtils.swing(SwingState.Post, SwingType.Placing, hand);
+        SettingUtils.swing(SwingState.Post, SwingType.Placing, Hand.MAIN_HAND);
     }
 
-    public void interactBlock(Hand hand, Vec3d blockHitVec, Direction blockDirection, BlockPos pos) {
-        Vec3d eyes = mc.player.getEyePos();
-        boolean inside =
-            eyes.x > pos.getX() && eyes.x < pos.getX() + 1 &&
-            eyes.y > pos.getY() && eyes.y < pos.getY() + 1 &&
-            eyes.z > pos.getZ() && eyes.z < pos.getZ() + 1;
-
-        SettingUtils.swing(SwingState.Pre, SwingType.Interact, hand);
-        sendSequenced(s -> new PlayerInteractBlockC2SPacket(hand, new BlockHitResult(blockHitVec, blockDirection, pos, inside), s));
-        SettingUtils.swing(SwingState.Post, SwingType.Interact, hand);
-    }
-
-    public void useItem(Hand hand) {
-        SettingUtils.swing(SwingState.Pre, SwingType.Using, hand);
-        sendSequenced(s -> new PlayerInteractItemC2SPacket(hand, s, 0.0f, 0.0f));
-        SettingUtils.swing(SwingState.Post, SwingType.Using, hand);
+    public void useItem(boolean hand) {
+        SettingUtils.swing(SwingState.Pre, SwingType.Using, Hand.MAIN_HAND);
+        sendSequenced(s -> new PlayerInteractItemC2SPacket(Hand.MAIN_HAND, s, 0.0f, 0.0f));
+        SettingUtils.swing(SwingState.Post, SwingType.Using, Hand.MAIN_HAND);
     }
 
     public void clientSwing(SwingHand swingHand, Hand realHand) {

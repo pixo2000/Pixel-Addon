@@ -1,8 +1,12 @@
 {
   "required": true,
-  "package": "me.pixel.mixin",
+  "package": "me.pixel.mixins",
   "compatibilityLevel": "JAVA_17",
-  "client": [],
+  "client": [
+    "AccessorMinecraftClient",
+    "IBlockSettings",
+    "IRaycastContext"
+  ],
   "injectors": {
     "defaultRequire": 1
   }

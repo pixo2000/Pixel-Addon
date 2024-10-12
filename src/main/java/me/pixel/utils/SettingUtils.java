@@ -5,7 +5,6 @@ import me.pixel.enums.SwingState;
 import me.pixel.enums.SwingType;
 import me.pixel.globalsettings.*;
 import meteordevelopment.meteorclient.systems.modules.Modules;
-import meteordevelopment.meteorclient.utils.Utils;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
@@ -91,8 +90,8 @@ public class SettingUtils {
 
     //  Swing
     public static void swing(SwingState state, SwingType type, Hand hand) {
-        swing.swing(state, type, hand);
-    }
+    swing.swing(state, type, hand);
+}
     public static void mineSwing(SwingSettings.MiningSwingState state) {
         swing.mineSwing(state);
     }
