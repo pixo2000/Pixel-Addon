@@ -27,7 +27,7 @@ public class Pixel extends MeteorAddon {
         // Modules
         Modules.get().add(new AutoDoors());
         Modules.get().add(new BookTools());
-        Modules.get().add(new AutoPearl());
+//        Modules.get().add(new AutoPearl());
 
 
         // Commands
@@ -39,7 +39,7 @@ public class Pixel extends MeteorAddon {
 
     @Override
     public void onRegisterCategories() {
-        Modules.registerCategory(PIXEL);
+        Modules.registerCategory(CATEGORY);
         Modules.registerCategory(SETTINGS);
     }
 
