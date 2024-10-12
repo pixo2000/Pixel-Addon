@@ -4,11 +4,11 @@
 - HWID sperre/Discord webhook to check who uses the mod
 - infiniaura
 - setup capes
-- add+recode AutoDoors
 - working crash
 - more locate
 fake attack(zewo2)
 fix girlboss
 add legit stuff
 
-UPDATE TO 1.21
+add bibliothek command(take every .txt file from a folder and write them into minecraft books(with options to make book copies/to make more books if it cannot complete it with 1 mc book))
+add autopearl/autopitch

@@ -27,11 +27,19 @@ public class Pixel extends MeteorAddon {
         // Modules
         Modules.get().add(new AutoDoors());
         Modules.get().add(new BookTools());
+        Modules.get().add(new MineESP());
+        Modules.get().add(new PagePirate());
+        Modules.get().add(new BannerData());
+        Modules.get().add(new RocketMan());
+        Modules.get().add(new AxolotlTools());
+        Modules.get().add(new TreasureESP());
+        Modules.get().add(new Updraft());
 //        Modules.get().add(new AutoPearl());
 
 
         // Commands
         Commands.add((new Tts()));
+        Commands.add(new Panorama());
 
         // HUD
         //Hud.get().register(HudExample.INFO);
